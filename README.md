@@ -3,23 +3,28 @@
 > Does multi-agent orchestration actually beat single-agent approaches on
 > real-world bug fixing? We took the [harness-engineering-skills][hes]
 > plugin and ran it head-to-head against 5 public baselines on a
-> stratified slice of SWE-bench Verified. **The headline result: harness
-> resolved 2 hard-tier instances that no public agent could solve.**
+> stratified slice of SWE-bench Verified.
+>
+> **Result: harness resolved 7/10 instances (70%), beating every public
+> baseline. Two of the wins are hard-tier instances NO public agent could
+> solve.**
 
 [hes]: https://github.com/stometa/harness-engineering-skills
 
 ## Headline numbers
 
-|                         | Harness | Best public baseline |
-|-------------------------|:-:|:-:|
-| Overall (10-instance slice, 8 gradable) | **6/8 = 75%** | 4/8 = 50% (Sonar Opus 4.5) |
-| Hard tier (3 instances) | **2/3 = 67%** | 1/3 = 33% |
-| **0-baseline-solved hard instances**    | **2/2 = 100% 🚀** | 0/2 = 0% |
+| Tier | Harness | Best public baseline | Δ |
+|---|:-:|:-:|:-:|
+| **Overall (10 instances)** | **7/10 = 70%** | 6/10 = 60% (bash-only Opus 4) | **+10pp** |
+| Easy (3 instances) | 1/3 = 33% | **3/3 = 100%** (bash-only) | **−67pp** |
+| Medium (4 instances) | **4/4 = 100%** | 3/4 = 75% (Sonar) | **+25pp** |
+| Hard (3 instances) | **2/3 = 67%** | 1/3 = 33% (3-way tie) | **+34pp** |
+| **0-baseline-solved instances (2)** | **2/2 = 100% 🚀** | 0/2 = 0% | **+100pp** |
 
-Two instances (matplotlib×2) errored out at the **grader infrastructure
-level** under Apple Silicon Docker emulation (conda packages couldn't
-fetch). Harness produced patches for both — they're awaiting re-grading
-via Docker Hub prebuilt images. Updated numbers will land in [RESULTS.md].
+The lead comes from **medium and hard** tiers. Harness is actually
+**worse on easy bugs** than bash-only Claude (multi-agent overhead can
+push fixes toward over-specification) — see the
+[honest failure analysis][RESULTS.md] for what we learned.
 
 📄 **[Full per-instance verdict matrix and failure analysis →
 RESULTS.md][RESULTS.md]**

@@ -19,8 +19,8 @@
     "difficulty": "<15 min fix",
     "baseline_hardness": "split",
     "harness": "failed",
-    "sonar_opus_4_5": null,
-    "openhands_opus_4_5": null,
+    "sonar_opus_4_5": "failed",
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "tools_opus_4": "resolved",
     "sweagent_sonnet_4": "resolved"
@@ -31,12 +31,12 @@
     "tier": "easy",
     "difficulty": "<15 min fix",
     "baseline_hardness": "few-solved",
-    "harness": null,
-    "sonar_opus_4_5": null,
-    "openhands_opus_4_5": null,
-    "openhands_sonnet_4": null,
+    "harness": "failed",
+    "sonar_opus_4_5": "failed",
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
     "tools_opus_4": "resolved",
-    "sweagent_sonnet_4": null
+    "sweagent_sonnet_4": "failed"
   },
   {
     "instance_id": "astropy__astropy-14539",
@@ -46,7 +46,7 @@
     "baseline_hardness": "majority",
     "harness": "resolved",
     "sonar_opus_4_5": "resolved",
-    "openhands_opus_4_5": null,
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "tools_opus_4": "resolved",
     "sweagent_sonnet_4": "resolved"
@@ -57,11 +57,11 @@
     "tier": "medium",
     "difficulty": "15 min - 1 hour",
     "baseline_hardness": "split",
-    "harness": null,
+    "harness": "resolved",
     "sonar_opus_4_5": "resolved",
     "openhands_opus_4_5": "resolved",
-    "openhands_sonnet_4": null,
-    "tools_opus_4": null,
+    "openhands_sonnet_4": "failed",
+    "tools_opus_4": "failed",
     "sweagent_sonnet_4": "resolved"
   },
   {
@@ -70,12 +70,12 @@
     "tier": "medium",
     "difficulty": "15 min - 1 hour",
     "baseline_hardness": "split",
-    "harness": null,
+    "harness": "resolved",
     "sonar_opus_4_5": "resolved",
     "openhands_opus_4_5": "resolved",
-    "openhands_sonnet_4": null,
-    "tools_opus_4": null,
-    "sweagent_sonnet_4": null
+    "openhands_sonnet_4": "failed",
+    "tools_opus_4": "failed",
+    "sweagent_sonnet_4": "failed"
   },
   {
     "instance_id": "pydata__xarray-6599",
@@ -83,12 +83,12 @@
     "tier": "medium",
     "difficulty": "15 min - 1 hour",
     "baseline_hardness": "few-solved",
-    "harness": null,
-    "sonar_opus_4_5": null,
-    "openhands_opus_4_5": null,
-    "openhands_sonnet_4": null,
+    "harness": "resolved",
+    "sonar_opus_4_5": "failed",
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
     "tools_opus_4": "resolved",
-    "sweagent_sonnet_4": null
+    "sweagent_sonnet_4": "failed"
   },
   {
     "instance_id": "astropy__astropy-14369",
@@ -97,11 +97,11 @@
     "difficulty": "1-4 hours",
     "baseline_hardness": "split",
     "harness": "failed",
-    "sonar_opus_4_5": null,
+    "sonar_opus_4_5": "failed",
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "tools_opus_4": "resolved",
-    "sweagent_sonnet_4": null
+    "sweagent_sonnet_4": "failed"
   },
   {
     "instance_id": "django__django-10554",
@@ -110,11 +110,11 @@
     "difficulty": "1-4 hours",
     "baseline_hardness": "few-solved",
     "harness": "resolved",
-    "sonar_opus_4_5": null,
-    "openhands_opus_4_5": null,
-    "openhands_sonnet_4": null,
-    "tools_opus_4": null,
-    "sweagent_sonnet_4": null
+    "sonar_opus_4_5": "failed",
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "tools_opus_4": "failed",
+    "sweagent_sonnet_4": "failed"
   },
   {
     "instance_id": "pydata__xarray-6992",
@@ -123,10 +123,10 @@
     "difficulty": ">4 hours",
     "baseline_hardness": "few-solved",
     "harness": "resolved",
-    "sonar_opus_4_5": null,
-    "openhands_opus_4_5": null,
-    "openhands_sonnet_4": null,
-    "tools_opus_4": null,
-    "sweagent_sonnet_4": null
+    "sonar_opus_4_5": "failed",
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "tools_opus_4": "failed",
+    "sweagent_sonnet_4": "failed"
   }
 ]

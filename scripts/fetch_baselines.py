@@ -49,7 +49,17 @@ def fetch_results(experiment_dir: str) -> dict:
 
 
 def main() -> int:
-    matrix: dict[str, dict[str, str]] = {}
+    # Load ALL 500 Verified instance IDs. SWE-bench results.json only
+    # lists `resolved` + `no_generation` + `no_logs`; every other instance
+    # is IMPLICITLY failed (the baseline submitted a patch but it didn't
+    # pass FAIL_TO_PASS or broke a PASS_TO_PASS). Without enumerating the
+    # full universe, we'd undercount failures and overcount the baseline.
+    from datasets import load_dataset
+    ds = load_dataset("princeton-nlp/SWE-bench_Verified", split="test")
+    all_verified_ids = {ex["instance_id"] for ex in ds}
+    print(f"Loaded universe of {len(all_verified_ids)} Verified instances", file=sys.stderr)
+
+    matrix: dict[str, dict[str, str]] = {iid: {} for iid in all_verified_ids}
     for alias, exp_dir in BASELINES:
         print(f"Fetching {alias} ({exp_dir})...", file=sys.stderr)
         try:
@@ -59,18 +69,21 @@ def main() -> int:
             continue
         resolved = set(data.get("resolved", []))
         no_gen = set(data.get("no_generation", []))
-        # Union of all instances mentioned across all baselines
-        all_ids = resolved | no_gen | set(data.get("no_logs", []))
-        for iid in all_ids:
-            if iid not in matrix:
-                matrix[iid] = {}
+        no_logs = set(data.get("no_logs", []))
+        # Default every instance to "failed" for this baseline; then
+        # promote based on what the results.json explicitly listed.
+        for iid in all_verified_ids:
             if iid in resolved:
                 matrix[iid][alias] = "resolved"
             elif iid in no_gen:
                 matrix[iid][alias] = "no_generation"
+            elif iid in no_logs:
+                matrix[iid][alias] = "no_logs"
             else:
                 matrix[iid][alias] = "failed"
-        print(f"  resolved={len(resolved)} no_gen={len(no_gen)}", file=sys.stderr)
+        print(f"  resolved={len(resolved)} no_gen={len(no_gen)} "
+              f"failed={len(all_verified_ids) - len(resolved) - len(no_gen) - len(no_logs)}",
+              file=sys.stderr)
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(matrix, indent=2, sort_keys=True))

@@ -60,14 +60,27 @@ def load_harness_results(run_id: str) -> dict[str, str]:
     upstream repo will abort summary generation. The per-instance reports
     are unaffected — they're written as each evaluation completes.
     """
-    base = REPO_ROOT / "logs" / "run_evaluation" / run_id
-    if not base.exists():
-        raise FileNotFoundError(f"No grader output dir for run_id={run_id} at {base}")
+    # run_id can be "*" to glob across all evaluation runs (useful when
+    # different grader run_ids handled different instance subsets — e.g.
+    # the matplotlib fallback used --namespace swebench under a separate
+    # run_id to work around Apple Silicon Docker network issues).
+    base = REPO_ROOT / "logs" / "run_evaluation"
+    if run_id == "*":
+        report_paths = list(base.glob("*/*/*/report.json"))
+    else:
+        run_dir = base / run_id
+        if not run_dir.exists():
+            raise FileNotFoundError(f"No grader output dir for run_id={run_id} at {run_dir}")
+        report_paths = list(run_dir.glob("*/*/report.json"))
 
     out: dict[str, str] = {}
-    for report_path in base.glob("*/*/report.json"):
+    for report_path in report_paths:
         data = json.loads(report_path.read_text())
         for iid, rec in data.items():
+            if iid == "astropy__astropy-14309" and run_id == "*":
+                # Skip the smoke_v1 duplicate (we'll prefer the harness_v1 one)
+                if "smoke_v1" in str(report_path) and iid in out:
+                    continue
             if not rec.get("patch_exists") or rec.get("patch_is_None"):
                 out[iid] = "no_generation"
             elif not rec.get("patch_successfully_applied", False):

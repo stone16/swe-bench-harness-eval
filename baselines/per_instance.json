@@ -6,6 +6,27 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "astropy__astropy-13033": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "astropy__astropy-13236": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "astropy__astropy-13398": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "astropy__astropy-13453": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -20,12 +41,26 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "astropy__astropy-13977": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "astropy__astropy-14096": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "astropy__astropy-14182": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "astropy__astropy-14309": {
     "openhands_opus_4_5": "resolved",
@@ -36,12 +71,16 @@
   },
   "astropy__astropy-14365": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "astropy__astropy-14369": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "astropy__astropy-14508": {
@@ -52,10 +91,18 @@
     "tools_opus_4": "resolved"
   },
   "astropy__astropy-14539": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "astropy__astropy-14598": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "astropy__astropy-14995": {
     "openhands_opus_4_5": "resolved",
@@ -78,6 +125,13 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "astropy__astropy-7606": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "astropy__astropy-7671": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -85,10 +139,33 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "astropy__astropy-8707": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "astropy__astropy-8872": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-10097": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "django__django-10554": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-10880": {
     "openhands_opus_4_5": "resolved",
@@ -107,8 +184,16 @@
   "django__django-10973": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "django__django-10999": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-11066": {
     "openhands_opus_4_5": "resolved",
@@ -116,6 +201,13 @@
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "django__django-11087": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-11095": {
     "openhands_opus_4_5": "resolved",
@@ -147,15 +239,24 @@
   },
   "django__django-11138": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-11141": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-11149": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "django__django-11163": {
     "openhands_opus_4_5": "resolved",
@@ -174,6 +275,8 @@
   "django__django-11206": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-11211": {
@@ -191,6 +294,7 @@
     "tools_opus_4": "resolved"
   },
   "django__django-11265": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
@@ -224,9 +328,19 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-11400": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-11433": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-11451": {
     "openhands_opus_4_5": "resolved",
@@ -235,7 +349,16 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-11477": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-11490": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -244,6 +367,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-11551": {
@@ -269,8 +393,17 @@
   },
   "django__django-11728": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
+  },
+  "django__django-11734": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-11740": {
     "openhands_opus_4_5": "resolved",
@@ -283,22 +416,36 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "django__django-11790": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-11815": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
+  },
+  "django__django-11820": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-11848": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-11880": {
     "openhands_opus_4_5": "resolved",
@@ -308,7 +455,10 @@
     "tools_opus_4": "resolved"
   },
   "django__django-11885": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-11951": {
@@ -320,7 +470,10 @@
   },
   "django__django-11964": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-11999": {
     "openhands_opus_4_5": "resolved",
@@ -368,13 +521,15 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-12209": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "django__django-12262": {
     "openhands_opus_4_5": "resolved",
@@ -384,8 +539,11 @@
     "tools_opus_4": "resolved"
   },
   "django__django-12273": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-12276": {
     "openhands_opus_4_5": "resolved",
@@ -402,8 +560,25 @@
     "tools_opus_4": "resolved"
   },
   "django__django-12308": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
+  },
+  "django__django-12325": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "django__django-12406": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-12419": {
     "openhands_opus_4_5": "resolved",
@@ -413,6 +588,8 @@
     "tools_opus_4": "resolved"
   },
   "django__django-12663": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -512,6 +689,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-13121": {
@@ -534,6 +712,20 @@
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "django__django-13195": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "django__django-13212": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-13279": {
     "openhands_opus_4_5": "resolved",
@@ -558,12 +750,17 @@
   },
   "django__django-13343": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
   "django__django-13344": {
-    "sonar_opus_4_5": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-13346": {
     "openhands_opus_4_5": "resolved",
@@ -615,11 +812,18 @@
     "tools_opus_4": "resolved"
   },
   "django__django-13512": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-13513": {
-    "openhands_opus_4_5": "no_generation"
+    "openhands_opus_4_5": "no_generation",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-13516": {
     "openhands_opus_4_5": "resolved",
@@ -637,6 +841,7 @@
   },
   "django__django-13568": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -683,6 +888,13 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-13794": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-13807": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -726,8 +938,11 @@
     "tools_opus_4": "resolved"
   },
   "django__django-13925": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "django__django-13933": {
     "openhands_opus_4_5": "resolved",
@@ -738,6 +953,7 @@
   },
   "django__django-13964": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -749,6 +965,13 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-14011": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-14017": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -756,8 +979,18 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-14034": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-14053": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-14089": {
@@ -771,11 +1004,29 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-14140": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
+  },
+  "django__django-14155": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "django__django-14170": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-14238": {
     "openhands_opus_4_5": "resolved",
@@ -790,6 +1041,13 @@
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "django__django-14315": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-14349": {
     "openhands_opus_4_5": "resolved",
@@ -816,15 +1074,19 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-14404": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-14434": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -845,7 +1107,10 @@
   },
   "django__django-14534": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-14539": {
     "openhands_opus_4_5": "resolved",
@@ -891,7 +1156,9 @@
   },
   "django__django-14725": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-14752": {
@@ -922,6 +1189,13 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-14792": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-14855": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -945,7 +1219,10 @@
   },
   "django__django-15022": {
     "openhands_opus_4_5": "resolved",
-    "openhands_sonnet_4": "resolved"
+    "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-15037": {
     "openhands_opus_4_5": "resolved",
@@ -953,6 +1230,13 @@
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "django__django-15098": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-15103": {
     "openhands_opus_4_5": "resolved",
@@ -970,7 +1254,10 @@
   },
   "django__django-15127": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-15128": {
     "openhands_opus_4_5": "resolved",
@@ -985,6 +1272,13 @@
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "django__django-15252": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-15268": {
     "openhands_opus_4_5": "resolved",
@@ -1009,7 +1303,9 @@
   },
   "django__django-15280": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-15315": {
@@ -1037,7 +1333,8 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "django__django-15382": {
     "openhands_opus_4_5": "resolved",
@@ -1061,6 +1358,7 @@
     "tools_opus_4": "resolved"
   },
   "django__django-15503": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
@@ -1074,6 +1372,8 @@
     "tools_opus_4": "resolved"
   },
   "django__django-15554": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -1086,7 +1386,11 @@
     "tools_opus_4": "resolved"
   },
   "django__django-15563": {
-    "sweagent_sonnet_4": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "django__django-15569": {
     "openhands_opus_4_5": "resolved",
@@ -1102,8 +1406,18 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-15629": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-15695": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-15731": {
@@ -1114,7 +1428,11 @@
     "tools_opus_4": "resolved"
   },
   "django__django-15732": {
-    "openhands_opus_4_5": "resolved"
+    "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-15741": {
     "openhands_opus_4_5": "resolved",
@@ -1145,6 +1463,7 @@
     "tools_opus_4": "resolved"
   },
   "django__django-15916": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
@@ -1159,16 +1478,23 @@
   },
   "django__django-15957": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-15973": {
-    "sonar_opus_4_5": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-15987": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-16032": {
@@ -1227,6 +1553,20 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-16256": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "django__django-16263": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-16315": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -1251,7 +1591,9 @@
   "django__django-16454": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-16485": {
     "openhands_opus_4_5": "resolved",
@@ -1267,6 +1609,13 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-16502": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-16527": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -1275,7 +1624,10 @@
     "tools_opus_4": "resolved"
   },
   "django__django-16560": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "django__django-16569": {
@@ -1299,11 +1651,19 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "django__django-16631": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "django__django-16642": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "django__django-16661": {
     "openhands_opus_4_5": "resolved",
@@ -1318,6 +1678,13 @@
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "django__django-16667": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-16801": {
     "openhands_opus_4_5": "resolved",
@@ -1335,7 +1702,10 @@
   },
   "django__django-16877": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-16899": {
     "openhands_opus_4_5": "resolved",
@@ -1353,7 +1723,17 @@
   },
   "django__django-16938": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "django__django-16950": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "django__django-17029": {
     "openhands_opus_4_5": "resolved",
@@ -1406,15 +1786,24 @@
   },
   "matplotlib__matplotlib-20488": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-20676": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "matplotlib__matplotlib-20826": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-20859": {
     "openhands_opus_4_5": "resolved",
@@ -1422,6 +1811,13 @@
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "matplotlib__matplotlib-21568": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-22719": {
     "openhands_opus_4_5": "resolved",
@@ -1433,18 +1829,29 @@
   "matplotlib__matplotlib-22865": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-22871": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
+  },
+  "matplotlib__matplotlib-23299": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-23314": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "matplotlib__matplotlib-23412": {
@@ -1454,24 +1861,37 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "matplotlib__matplotlib-23476": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "matplotlib__matplotlib-24026": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "matplotlib__matplotlib-24149": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "matplotlib__matplotlib-24177": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-24570": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -1480,6 +1900,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "matplotlib__matplotlib-24637": {
@@ -1490,7 +1911,11 @@
     "tools_opus_4": "resolved"
   },
   "matplotlib__matplotlib-24870": {
-    "sonar_opus_4_5": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-24970": {
     "openhands_opus_4_5": "resolved",
@@ -1510,6 +1935,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "matplotlib__matplotlib-25311": {
@@ -1521,27 +1947,45 @@
   },
   "matplotlib__matplotlib-25332": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "matplotlib__matplotlib-25479": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "matplotlib__matplotlib-25775": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-25960": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-26113": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "matplotlib__matplotlib-26208": {
-    "openhands_sonnet_4": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "matplotlib__matplotlib-26291": {
     "openhands_opus_4_5": "resolved",
@@ -1557,6 +2001,13 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "matplotlib__matplotlib-26466": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "mwaskom__seaborn-3069": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -1565,8 +2016,11 @@
     "tools_opus_4": "resolved"
   },
   "mwaskom__seaborn-3187": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "pallets__flask-5014": {
     "openhands_opus_4_5": "resolved",
@@ -1576,31 +2030,43 @@
     "tools_opus_4": "resolved"
   },
   "psf__requests-1142": {
-    "openhands_sonnet_4": "failed",
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "no_logs",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
   "psf__requests-1724": {
-    "sweagent_sonnet_4": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "psf__requests-1766": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
   "psf__requests-1921": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "psf__requests-2317": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
   "psf__requests-2931": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -1609,11 +2075,15 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "psf__requests-6028": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "pydata__xarray-2905": {
     "openhands_opus_4_5": "resolved",
@@ -1686,8 +2156,10 @@
     "tools_opus_4": "resolved"
   },
   "pydata__xarray-4687": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "pydata__xarray-4695": {
@@ -1708,9 +2180,14 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "pydata__xarray-6599": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "pydata__xarray-6721": {
@@ -1729,7 +2206,24 @@
   },
   "pydata__xarray-6938": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "pydata__xarray-6992": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "pydata__xarray-7229": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "pydata__xarray-7233": {
     "openhands_opus_4_5": "resolved",
@@ -1745,19 +2239,47 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "pylint-dev__pylint-4551": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "pylint-dev__pylint-4604": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "pylint-dev__pylint-4661": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "pylint-dev__pylint-4970": {
-    "openhands_opus_4_5": "resolved"
+    "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "pylint-dev__pylint-6386": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "pylint-dev__pylint-6528": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "pylint-dev__pylint-6903": {
     "openhands_opus_4_5": "resolved",
@@ -1766,13 +2288,30 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "pylint-dev__pylint-7080": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "pylint-dev__pylint-7277": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "pylint-dev__pylint-8898": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "pytest-dev__pytest-10051": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -1786,7 +2325,10 @@
   },
   "pytest-dev__pytest-10356": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "pytest-dev__pytest-5262": {
     "openhands_opus_4_5": "resolved",
@@ -1804,7 +2346,9 @@
   },
   "pytest-dev__pytest-5787": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "pytest-dev__pytest-5809": {
@@ -1814,9 +2358,18 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "pytest-dev__pytest-5840": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "pytest-dev__pytest-6197": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "pytest-dev__pytest-6202": {
@@ -1827,9 +2380,11 @@
     "tools_opus_4": "resolved"
   },
   "pytest-dev__pytest-7205": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "pytest-dev__pytest-7236": {
     "openhands_opus_4_5": "resolved",
@@ -1842,6 +2397,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "pytest-dev__pytest-7432": {
@@ -1853,6 +2409,7 @@
   },
   "pytest-dev__pytest-7490": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -1861,6 +2418,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "pytest-dev__pytest-7571": {
@@ -1944,6 +2502,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "scikit-learn__scikit-learn-13135": {
@@ -2018,7 +2577,10 @@
   },
   "scikit-learn__scikit-learn-14629": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "scikit-learn__scikit-learn-14710": {
     "openhands_opus_4_5": "resolved",
@@ -2045,12 +2607,15 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "scikit-learn__scikit-learn-25102": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "scikit-learn__scikit-learn-25232": {
     "openhands_opus_4_5": "resolved",
@@ -2059,8 +2624,16 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "scikit-learn__scikit-learn-25747": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "scikit-learn__scikit-learn-25931": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -2072,10 +2645,18 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "scikit-learn__scikit-learn-26194": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "scikit-learn__scikit-learn-26323": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "scikit-learn__scikit-learn-9288": {
@@ -2093,7 +2674,11 @@
     "tools_opus_4": "resolved"
   },
   "sphinx-doc__sphinx-10435": {
-    "openhands_sonnet_4": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sphinx-doc__sphinx-10449": {
     "openhands_opus_4_5": "resolved",
@@ -2109,9 +2694,17 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sphinx-doc__sphinx-10614": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sphinx-doc__sphinx-10673": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
@@ -2119,17 +2712,50 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
+  },
+  "sphinx-doc__sphinx-11510": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sphinx-doc__sphinx-7440": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "sphinx-doc__sphinx-7454": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
+  },
+  "sphinx-doc__sphinx-7462": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "sphinx-doc__sphinx-7590": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "sphinx-doc__sphinx-7748": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sphinx-doc__sphinx-7757": {
     "openhands_opus_4_5": "resolved",
@@ -2152,6 +2778,13 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sphinx-doc__sphinx-7985": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sphinx-doc__sphinx-8035": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -2161,6 +2794,7 @@
   },
   "sphinx-doc__sphinx-8056": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -2176,6 +2810,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sphinx-doc__sphinx-8269": {
@@ -2199,10 +2834,18 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sphinx-doc__sphinx-8548": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sphinx-doc__sphinx-8551": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sphinx-doc__sphinx-8593": {
@@ -2213,16 +2856,25 @@
     "tools_opus_4": "resolved"
   },
   "sphinx-doc__sphinx-8595": {
-    "sweagent_sonnet_4": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "sphinx-doc__sphinx-8621": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sphinx-doc__sphinx-8638": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sphinx-doc__sphinx-8721": {
     "openhands_opus_4_5": "resolved",
@@ -2232,7 +2884,11 @@
     "tools_opus_4": "resolved"
   },
   "sphinx-doc__sphinx-9229": {
-    "openhands_opus_4_5": "no_generation"
+    "openhands_opus_4_5": "no_generation",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sphinx-doc__sphinx-9230": {
     "openhands_opus_4_5": "resolved",
@@ -2245,6 +2901,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sphinx-doc__sphinx-9281": {
@@ -2268,6 +2925,13 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sphinx-doc__sphinx-9461": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sphinx-doc__sphinx-9591": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -2275,8 +2939,16 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sphinx-doc__sphinx-9602": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sphinx-doc__sphinx-9658": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -2296,7 +2968,9 @@
     "tools_opus_4": "resolved"
   },
   "sphinx-doc__sphinx-9711": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
@@ -2330,13 +3004,17 @@
   },
   "sympy__sympy-12489": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-13031": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-13091": {
     "openhands_opus_4_5": "resolved",
@@ -2388,12 +3066,25 @@
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-13798": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
+  },
+  "sympy__sympy-13852": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-13877": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-13878": {
     "openhands_opus_4_5": "resolved",
@@ -2402,8 +3093,19 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sympy__sympy-13974": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sympy__sympy-14248": {
-    "openhands_opus_4_5": "resolved"
+    "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-14531": {
     "openhands_opus_4_5": "resolved",
@@ -2423,12 +3125,15 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-15017": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-15345": {
     "openhands_opus_4_5": "resolved",
@@ -2446,22 +3151,30 @@
   },
   "sympy__sympy-15599": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-15809": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-15875": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-15976": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-16450": {
@@ -2470,6 +3183,13 @@
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
+  },
+  "sympy__sympy-16597": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-16766": {
     "openhands_opus_4_5": "resolved",
@@ -2499,11 +3219,23 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sympy__sympy-17318": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sympy__sympy-17630": {
-    "sonar_opus_4_5": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-17655": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
@@ -2515,7 +3247,15 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sympy__sympy-18199": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sympy__sympy-18211": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
     "sweagent_sonnet_4": "resolved",
@@ -2523,12 +3263,24 @@
   },
   "sympy__sympy-18698": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "sympy__sympy-18763": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-19040": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-19346": {
     "openhands_opus_4_5": "resolved",
@@ -2540,7 +3292,9 @@
   "sympy__sympy-19495": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-19637": {
     "openhands_opus_4_5": "resolved",
@@ -2570,6 +3324,20 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sympy__sympy-20428": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "sympy__sympy-20438": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sympy__sympy-20590": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
@@ -2585,17 +3353,31 @@
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-20916": {
-    "sonar_opus_4_5": "resolved"
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-21379": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
+  },
+  "sympy__sympy-21596": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-21612": {
     "openhands_opus_4_5": "resolved",
+    "openhands_sonnet_4": "failed",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-21847": {
@@ -2605,11 +3387,26 @@
     "sweagent_sonnet_4": "resolved",
     "tools_opus_4": "resolved"
   },
+  "sympy__sympy-21930": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
+  "sympy__sympy-22080": {
+    "openhands_opus_4_5": "failed",
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
+  },
   "sympy__sympy-22456": {
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
-    "sweagent_sonnet_4": "resolved"
+    "sweagent_sonnet_4": "resolved",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-22714": {
     "openhands_opus_4_5": "resolved",
@@ -2634,7 +3431,10 @@
   },
   "sympy__sympy-23413": {
     "openhands_opus_4_5": "resolved",
-    "sonar_opus_4_5": "resolved"
+    "openhands_sonnet_4": "failed",
+    "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
+    "tools_opus_4": "failed"
   },
   "sympy__sympy-23534": {
     "openhands_opus_4_5": "resolved",
@@ -2651,7 +3451,10 @@
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-23950": {
+    "openhands_opus_4_5": "failed",
     "openhands_sonnet_4": "resolved",
+    "sonar_opus_4_5": "failed",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-24066": {
@@ -2686,6 +3489,7 @@
     "openhands_opus_4_5": "resolved",
     "openhands_sonnet_4": "resolved",
     "sonar_opus_4_5": "resolved",
+    "sweagent_sonnet_4": "failed",
     "tools_opus_4": "resolved"
   },
   "sympy__sympy-24661": {
