@@ -27,7 +27,7 @@ PREDICTIONS="$REPO_ROOT/predictions/harness.jsonl"    # consolidated, built by c
 LOGS_DIR="$REPO_ROOT/logs"
 CANDIDATES="$REPO_ROOT/instances/candidates.json"
 
-MODEL_NAME="${MODEL_NAME:-harness-claude-opus-4-5}"
+MODEL_NAME="${MODEL_NAME:-harness-lite-claude-opus-4-7}"
 MAX_BUDGET_USD="${MAX_BUDGET_USD:-50}"
 MAX_TURNS="${MAX_TURNS:-200}"
 TIMEOUT_SECONDS="${TIMEOUT_SECONDS:-1800}"  # 30 min/instance

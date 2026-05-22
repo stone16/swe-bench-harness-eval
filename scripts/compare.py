@@ -32,6 +32,11 @@ TIER_LABELS = {
 }
 
 BASELINE_ALIASES = [
+    # Same-model comparison (Opus 4.7) — load-bearing for differentiation claims
+    "openhands_opus_4_7",
+    "openhands_opus_4_6",
+    # Older-model baselines from swe-bench/experiments (context, not the
+    # primary comparison — they used Opus 4.5 / Sonnet 4 era models)
     "sonar_opus_4_5",
     "openhands_opus_4_5",
     "openhands_sonnet_4",
@@ -39,9 +44,10 @@ BASELINE_ALIASES = [
     "sweagent_sonnet_4",
 ]
 
-# Compact display labels for the verdict matrix (disambiguates duplicate
-# agent names that differ only by model).
+# Compact display labels for the verdict matrix.
 BASELINE_LABELS = {
+    "openhands_opus_4_7":  "oh/o47",     # ← primary same-model comparison
+    "openhands_opus_4_6":  "oh/o46",
     "sonar_opus_4_5":      "sonar/o45",
     "openhands_opus_4_5":  "oh/o45",
     "openhands_sonnet_4":  "oh/s4",
