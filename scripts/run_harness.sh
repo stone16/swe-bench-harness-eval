@@ -153,9 +153,14 @@ Evaluator returns PASS on Checkpoint 01."
   # Capture the prediction patch (diff from base_commit on tracked source files,
   # excluding any test files in case the generator misbehaved despite the spec).
   local patch_file; patch_file="$(mktemp)"
+  # Excludes:
+  #  - test files (grader supplies its own test_patch)
+  #  - .gitignore (engine init mutates it; pure infrastructure noise)
+  #  - .harness/ (entirely our scaffolding, never part of a real fix)
   (cd "$work" && git diff "$sha" -- . \
       ':(exclude)tests' ':(exclude)testing' ':(exclude)**/*_test.py' \
       ':(exclude)**/test_*.py' \
+      ':(exclude).gitignore' ':(exclude).harness' \
       > "$patch_file") 2>>"$log"
 
   "$REPO_ROOT/.venv/bin/python" "$REPO_ROOT/scripts/_append_prediction.py" \
