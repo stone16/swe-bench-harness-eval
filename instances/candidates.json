@@ -1,0 +1,132 @@
+[
+  {
+    "instance_id": "astropy__astropy-14309",
+    "repo": "astropy/astropy",
+    "difficulty": "<15 min fix",
+    "problem_statement_preview": "IndexError: tuple index out of range in identify_format (io.registry)\n<!-- This comments are hidden when you submit the issue,\r\nso you do not need to remove the",
+    "_hardness": "all-solved",
+    "baselines_resolved": 5,
+    "baselines_resolved_by": [
+      "openhands_opus_4_5",
+      "openhands_sonnet_4",
+      "sonar_opus_4_5",
+      "sweagent_sonnet_4",
+      "tools_opus_4"
+    ],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "django__django-10097",
+    "repo": "django/django",
+    "difficulty": "<15 min fix",
+    "problem_statement_preview": "Make URLValidator reject invalid characters in the username and password\nDescription\n\t \n\t\t(last modified by Tim Bell)\n\t \nSince #20003, core.validators.URLValida",
+    "_hardness": "split",
+    "baselines_resolved": 3,
+    "baselines_resolved_by": [
+      "openhands_sonnet_4",
+      "sweagent_sonnet_4",
+      "tools_opus_4"
+    ],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-20676",
+    "repo": "matplotlib/matplotlib",
+    "difficulty": "<15 min fix",
+    "problem_statement_preview": "interactive SpanSelector incorrectly forces axes limits to include 0\n<!--To help us understand and resolve your issue, please fill out the form to the best of y",
+    "_hardness": "few-solved",
+    "baselines_resolved": 1,
+    "baselines_resolved_by": [
+      "tools_opus_4"
+    ],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "astropy__astropy-14539",
+    "repo": "astropy/astropy",
+    "difficulty": "15 min - 1 hour",
+    "problem_statement_preview": "`io.fits.FITSDiff` may sometimes report differences between identical files\n### Description\n\nIn some scenarios, `io.fits.FITSDiff` may report differences betwee",
+    "_hardness": "majority",
+    "baselines_resolved": 4,
+    "baselines_resolved_by": [
+      "openhands_sonnet_4",
+      "sonar_opus_4_5",
+      "sweagent_sonnet_4",
+      "tools_opus_4"
+    ],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "django__django-11149",
+    "repo": "django/django",
+    "difficulty": "15 min - 1 hour",
+    "problem_statement_preview": "Admin inlines for auto-created ManyToManyFields are editable if the user only has the view permission\nDescription\n\t\nFrom https://code.djangoproject.com/ticket/8",
+    "_hardness": "split",
+    "baselines_resolved": 3,
+    "baselines_resolved_by": [
+      "openhands_opus_4_5",
+      "sonar_opus_4_5",
+      "sweagent_sonnet_4"
+    ],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-20488",
+    "repo": "matplotlib/matplotlib",
+    "difficulty": "15 min - 1 hour",
+    "problem_statement_preview": "test_huge_range_log is failing...\n<!--To help us understand and resolve your issue, please fill out the form to the best of your ability.-->\r\n<!--You can feel f",
+    "_hardness": "split",
+    "baselines_resolved": 2,
+    "baselines_resolved_by": [
+      "openhands_opus_4_5",
+      "sonar_opus_4_5"
+    ],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "pydata__xarray-6599",
+    "repo": "pydata/xarray",
+    "difficulty": "15 min - 1 hour",
+    "problem_statement_preview": "`polyval` with timedelta64 coordinates produces wrong results\n### What happened?\r\n\r\nI'm not sure if this is a bug or an expected breaking change, but I'm not ab",
+    "_hardness": "few-solved",
+    "baselines_resolved": 1,
+    "baselines_resolved_by": [
+      "tools_opus_4"
+    ],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "astropy__astropy-14369",
+    "repo": "astropy/astropy",
+    "difficulty": "1-4 hours",
+    "problem_statement_preview": "Incorrect units read from MRT (CDS format) files with astropy.table\n### Description\n\nWhen reading MRT files (formatted according to the CDS standard which is al",
+    "_hardness": "split",
+    "baselines_resolved": 3,
+    "baselines_resolved_by": [
+      "openhands_opus_4_5",
+      "openhands_sonnet_4",
+      "tools_opus_4"
+    ],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "django__django-10554",
+    "repo": "django/django",
+    "difficulty": "1-4 hours",
+    "problem_statement_preview": "Union queryset with ordering breaks on ordering with derived querysets\nDescription\n\t \n\t\t(last modified by Sergei Maertens)\n\t \nMay be related to #29692\nSimple re",
+    "_hardness": "few-solved",
+    "baselines_resolved": 0,
+    "baselines_resolved_by": [],
+    "n_baselines": 5
+  },
+  {
+    "instance_id": "pydata__xarray-6992",
+    "repo": "pydata/xarray",
+    "difficulty": ">4 hours",
+    "problem_statement_preview": "index refactor: more `_coord_names` than `_variables` on Dataset\n### What happened?\n\n`xr.core.dataset.DataVariables` assumes that everything that is in `ds._dat",
+    "_hardness": "few-solved",
+    "baselines_resolved": 0,
+    "baselines_resolved_by": [],
+    "n_baselines": 5
+  }
+]
