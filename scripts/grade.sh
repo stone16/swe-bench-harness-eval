@@ -12,7 +12,7 @@ cd "$REPO_ROOT"
 .venv/bin/python -m swebench.harness.run_evaluation \
     --dataset_name princeton-nlp/SWE-bench_Verified \
     --predictions_path predictions/harness.jsonl \
-    --max_workers 4 \
+    --max_workers "${MAX_WORKERS:-1}" \
     --run_id "$RUN_ID" \
     --namespace '' \
     --instance_image_tag latest 2>&1 | tee "logs/grade.$RUN_ID.log"

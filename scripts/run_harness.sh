@@ -22,7 +22,8 @@ set -uo pipefail
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 WORKDIRS="$REPO_ROOT/workdirs"
 SPECS_DIR="$REPO_ROOT/specs"
-PREDICTIONS="$REPO_ROOT/predictions/harness.jsonl"
+PREDICTIONS_DIR="$REPO_ROOT/predictions/_individual"  # one JSONL line per file
+PREDICTIONS="$REPO_ROOT/predictions/harness.jsonl"    # consolidated, built by consolidate.py
 LOGS_DIR="$REPO_ROOT/logs"
 CANDIDATES="$REPO_ROOT/instances/candidates.json"
 
@@ -31,7 +32,7 @@ MAX_BUDGET_USD="${MAX_BUDGET_USD:-50}"
 MAX_TURNS="${MAX_TURNS:-200}"
 TIMEOUT_SECONDS="${TIMEOUT_SECONDS:-1800}"  # 30 min/instance
 
-mkdir -p "$WORKDIRS" "$LOGS_DIR" "$(dirname "$PREDICTIONS")"
+mkdir -p "$WORKDIRS" "$LOGS_DIR" "$PREDICTIONS_DIR"
 touch "$PREDICTIONS"
 
 # Resolve the harness engine script once
@@ -45,9 +46,15 @@ if [[ ! -x "$ENGINE" ]]; then
 fi
 echo "Engine: $ENGINE" >&2
 
-# Already-completed instances (avoid re-running)
+# Already-completed instances (avoid re-running).
+# Source of truth is the per-instance prediction file: one file == one
+# completed run. This is parallel-safe (no shared file to grep against)
+# and also catches predictions already merged into the consolidated JSONL.
 already_done() {
   local iid="$1"
+  if [[ -s "$PREDICTIONS_DIR/$iid.jsonl" ]]; then
+    return 0
+  fi
   grep -q "\"instance_id\": \"$iid\"" "$PREDICTIONS" 2>/dev/null
 }
 
@@ -140,15 +147,35 @@ through the per-checkpoint Evaluator loop. Do NOT run E2E, review-loop,
 full-verify, PR, or retro — config.json has them disabled. Stop after the
 Evaluator returns PASS on Checkpoint 01."
 
-  timeout "$TIMEOUT_SECONDS" claude -p "$prompt" \
-    --add-dir "$work" \
-    --dangerously-skip-permissions \
-    --max-turns "$MAX_TURNS" \
-    --max-budget-usd "$MAX_BUDGET_USD" \
-    --append-system-prompt "You are operating inside $work. All file operations stay inside that directory. Do not modify files under tests/, testing/, or **/*_test.py — the grader supplies its own." \
-    >>"$log" 2>&1
-  local rc=$?
-  echo "[$iid] claude exit code: $rc" | tee -a "$log"
+  # Retry on Anthropic 529 "Overloaded" errors with exponential backoff.
+  # The harness's first ~30s is loading plugin context; if API is overloaded
+  # at that exact moment, we get a 529 and fail fast. A short retry typically
+  # recovers because parallel clients don't stay in lockstep.
+  local rc=1 attempt=0
+  while (( attempt < 3 )); do
+    attempt=$((attempt + 1))
+    echo "[$iid] claude attempt $attempt/3" | tee -a "$log"
+    timeout "$TIMEOUT_SECONDS" claude -p "$prompt" \
+      --add-dir "$work" \
+      --dangerously-skip-permissions \
+      --max-turns "$MAX_TURNS" \
+      --max-budget-usd "$MAX_BUDGET_USD" \
+      --append-system-prompt "You are operating inside $work. All file operations stay inside that directory. Do not modify files under tests/, testing/, or **/*_test.py — the grader supplies its own." \
+      </dev/null >>"$log" 2>&1
+    rc=$?
+    if (( rc == 0 )); then
+      break
+    fi
+    if tail -5 "$log" | grep -qiE "529|Overloaded|rate limit|too many requests"; then
+      local sleep_for=$(( 30 * attempt ))   # 30s, 60s, 90s
+      echo "[$iid] overload detected, sleeping ${sleep_for}s before retry" | tee -a "$log"
+      sleep "$sleep_for"
+    else
+      # Different failure mode — no point retrying
+      break
+    fi
+  done
+  echo "[$iid] claude final exit code: $rc" | tee -a "$log"
 
   # Capture the prediction patch (diff from base_commit on tracked source files,
   # excluding any test files in case the generator misbehaved despite the spec).
@@ -163,28 +190,46 @@ Evaluator returns PASS on Checkpoint 01."
       ':(exclude).gitignore' ':(exclude).harness' \
       > "$patch_file") 2>>"$log"
 
-  "$REPO_ROOT/.venv/bin/python" "$REPO_ROOT/scripts/_append_prediction.py" \
-      --iid "$iid" --model "$MODEL_NAME" --patch-file "$patch_file" \
-      >> "$PREDICTIONS"
-
   local nlines; nlines=$(wc -l < "$patch_file" | tr -d ' ')
+
+  # Only write the per-instance prediction if we actually got a non-empty
+  # patch. Empty patches are noise — they'd make already_done() falsely skip
+  # the instance on rerun, and the grader would treat them as no_generation.
+  if (( nlines > 0 )); then
+    "$REPO_ROOT/.venv/bin/python" "$REPO_ROOT/scripts/_append_prediction.py" \
+        --iid "$iid" --model "$MODEL_NAME" --patch-file "$patch_file" \
+        > "$PREDICTIONS_DIR/$iid.jsonl"
+    echo "[$iid] === done (patch=$nlines lines, exit=$rc, prediction written) ===" | tee -a "$log"
+  else
+    rm -f "$PREDICTIONS_DIR/$iid.jsonl"  # belt-and-suspenders
+    echo "[$iid] === FAILED (empty patch, exit=$rc) — no prediction written, retry next run ===" | tee -a "$log"
+    rm -f "$patch_file"
+    return 1
+  fi
   rm -f "$patch_file"
-  echo "[$iid] === done (patch=$nlines lines, exit=$rc) ===" | tee -a "$log"
 }
 
 main() {
   prefetch_metadata
   if [[ $# -gt 0 ]]; then
     run_one "$1"
-  else
-    "$REPO_ROOT/.venv/bin/python" -c "
+    return
+  fi
+  # Iterate via an array instead of pipe-to-while. The pipe pattern fails
+  # silently when any inner command (e.g. claude -p) consumes stdin from the
+  # pipe and drains the remaining iids.
+  local iids=()
+  while IFS= read -r line; do
+    iids+=("$line")
+  done < <("$REPO_ROOT/.venv/bin/python" -c "
 import json, sys
 for c in json.load(open('$CANDIDATES')):
     print(c['instance_id'])
-" | while read -r iid; do
-      run_one "$iid" || echo "[$iid] FAILED" >&2
-    done
-  fi
+")
+  echo "Will process ${#iids[@]} instances: ${iids[*]}" >&2
+  for iid in "${iids[@]}"; do
+    run_one "$iid" || echo "[$iid] FAILED" >&2
+  done
 }
 
 main "$@"
