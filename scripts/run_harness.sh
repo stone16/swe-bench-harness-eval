@@ -52,10 +52,16 @@ echo "Engine: $ENGINE" >&2
 # and also catches predictions already merged into the consolidated JSONL.
 already_done() {
   local iid="$1"
-  if [[ -s "$PREDICTIONS_DIR/$iid.jsonl" ]]; then
+  # Mode-aware filename — harness-full writes to a -full-codex-peer suffix
+  # so a prior harness-lite run doesn't cause it to skip.
+  local suffix=""
+  if [[ "${HARNESS_FULL:-0}" == "1" ]]; then
+    suffix="-full-codex-peer"
+  fi
+  if [[ -s "$PREDICTIONS_DIR/${iid}${suffix}.jsonl" ]]; then
     return 0
   fi
-  grep -q "\"instance_id\": \"$iid\"" "$PREDICTIONS" 2>/dev/null
+  return 1
 }
 
 # Read base_commit + repo for an instance (one HF fetch is faster than per-call)
@@ -121,21 +127,34 @@ run_one() {
   mkdir -p "$work/.harness/$tid"
   cp "$spec" "$work/.harness/$tid/spec.md"
 
-  # Force config: no PR, no full-verify (no upstream to verify against),
-  # skip cross-model review (we want to compare base harness vs single-agent)
-  # — but keep the per-checkpoint Evaluator loop, which IS the load-bearing
-  # anti-drift mechanism.
+  # Force config. Two modes controlled by HARNESS_FULL env var:
+  #   harness-lite (default): Gen+Eval loop only, no cross-model peer
+  #   harness-full (HARNESS_FULL=1): adds Codex cross-model review-loop
+  #
+  # In both modes we skip full-verify (no upstream PR target) and retro
+  # (single-task eval). Spec rounds=1 because spec is pre-generated offline.
+  local cross_model="false"
+  local model_label_suffix=""
+  if [[ "${HARNESS_FULL:-0}" == "1" ]]; then
+    cross_model="true"
+    model_label_suffix="-full-codex-peer"
+  fi
   cat > "$work/.harness/config.json" <<EOF
 {
   "max_spec_rounds": 1,
   "max_eval_rounds": 3,
-  "cross_model_review": false,
+  "cross_model_review": $cross_model,
+  "cross_model_peer": "codex",
+  "cross_model_read_only": false,
   "auto_retro": false,
   "skip_full_verify": true,
   "autonomous_pr": false,
   "coverage_threshold": 0
 }
 EOF
+  # Mode-specific suffix so harness-full predictions don't collide with
+  # harness-lite ones in _individual/
+  local mode_iid="${iid}${model_label_suffix}"
 
   # Invoke harness in headless mode
   local prompt="harness execute $tid
@@ -192,16 +211,21 @@ Evaluator returns PASS on Checkpoint 01."
 
   local nlines; nlines=$(wc -l < "$patch_file" | tr -d ' ')
 
+  # Capture which mode produced this for the filename suffix
+  : "${mode_iid:=$iid}"
+
   # Only write the per-instance prediction if we actually got a non-empty
   # patch. Empty patches are noise — they'd make already_done() falsely skip
   # the instance on rerun, and the grader would treat them as no_generation.
+  local out_path="$PREDICTIONS_DIR/${mode_iid}.jsonl"
+  local model_for_record="${MODEL_NAME}${model_label_suffix:-}"
   if (( nlines > 0 )); then
     "$REPO_ROOT/.venv/bin/python" "$REPO_ROOT/scripts/_append_prediction.py" \
-        --iid "$iid" --model "$MODEL_NAME" --patch-file "$patch_file" \
-        > "$PREDICTIONS_DIR/$iid.jsonl"
-    echo "[$iid] === done (patch=$nlines lines, exit=$rc, prediction written) ===" | tee -a "$log"
+        --iid "$iid" --model "$model_for_record" --patch-file "$patch_file" \
+        > "$out_path"
+    echo "[$iid] === done (patch=$nlines lines, exit=$rc, prediction → $(basename "$out_path")) ===" | tee -a "$log"
   else
-    rm -f "$PREDICTIONS_DIR/$iid.jsonl"  # belt-and-suspenders
+    rm -f "$out_path"
     echo "[$iid] === FAILED (empty patch, exit=$rc) — no prediction written, retry next run ===" | tee -a "$log"
     rm -f "$patch_file"
     return 1

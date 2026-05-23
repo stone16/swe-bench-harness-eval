@@ -59,13 +59,17 @@ numbers** — what we tested is one slice of the full design:
 | `skip_full_verify` | false | **true** | No upstream PR to verify against |
 | `coverage_threshold` | 85 | 0 | Most repos don't expose conftest-compatible coverage |
 
-**The full harness includes cross-vendor peer review** — a Codex or
-Gemini session reviews the patch and challenges the Generator across
-multiple rounds before final commit. That feature might recover one or
-both of our failed instances (`astropy-14369`, `django-10097`, both
-involving over-/under-restrictive parser fixes). Testing whether the
-full pipeline beats harness-lite is a logical next step but wasn't
-part of this run.
+**Update — we ran the harness-full A/B experiment**: we re-ran all 3
+failed instances (`astropy-14369`, `django-10097`, `matplotlib-20676`)
+with `cross_model_review=true` (Codex peer review enabled). **Result:
+0/3 resolved.** Cross-model peer review changed the patch strategy on
+2/3 instances (one going from hacky string preprocessor to proper LALR
+grammar rewrite, one moving from wrong layer to right layer) — but
+**did not flip any failure to a pass**. Both Claude and Codex share
+the same bias toward "make positive cases pass" and miss negative-case
+regression risk. Full A/B writeup: **[EXPERIMENT_AB.md][AB]**.
+
+[AB]: ./EXPERIMENT_AB.md
 
 ## Per-instance matrix (8-system comparison)
 
